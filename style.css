@@ -446,6 +446,8 @@ a {
   align-items: center;
   justify-content: center;
   padding: 20px 32px;
+  margin-bottom: 0;
+  padding-bottom: 20px;
 }
 
 .contact__content {
@@ -625,6 +627,7 @@ a {
   color: #f8eef1;
   text-align: center;
   width:100%;
+  margin-top: 0;
 }
 
 .footer__inner {
@@ -666,15 +669,6 @@ a {
     flex-direction: column;
     text-align: center;
   }
-
-  footer {
-    margin-top: 40px;
-  }
-}
-
-body {
-  overflow-x: hidden;
-}
 
 body {
   overflow-x: hidden;

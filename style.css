@@ -527,6 +527,8 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-top: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .email{
@@ -537,6 +539,24 @@ a {
 .sosial{
   display: flex;
   gap: 15px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+
+.contact-container {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sosial {
+  justify-content: flex-start;
+}
+
+.email p {
+  word-break: break-all;
+}
+
 }
 
 /* ════════════════════════════════════════════
@@ -650,4 +670,12 @@ a {
   footer {
     margin-top: 40px;
   }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
 }

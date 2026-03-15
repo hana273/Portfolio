@@ -10,6 +10,11 @@ html {
 }
 
 body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
   text-align: justify;
   font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
   font-size: 16px;
@@ -82,7 +87,7 @@ a {
 .btn-primary {
   background-color: #492532;
   color: #ffffff;
-  padding: 8px 24px;
+  padding: 6px 12px;
   border-radius: 6px;
   font-weight: 600;
   font-size: 0.9rem;
@@ -486,7 +491,7 @@ a {
   padding: 4px 16px;
   border-radius: 99px;
   font-size: 0.85rem;
-  margin-bottom: 24px;
+  margin-bottom: 0px;
 }
 
 .contact__title {
@@ -494,7 +499,7 @@ a {
   font-weight: 800;
   color: #f7c7da;
   line-height: 1.2;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .highlight {
@@ -504,14 +509,14 @@ a {
 .contact__desc {
   color: #fefdfd;
   font-size: 1.1rem;
-  margin-bottom: 36px;
+  margin-bottom: 0px;
 }
 
 .contact-text {
   color: white;
   font-size: 18px;
   text-align: center !important;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .contact__actions {
@@ -551,7 +556,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 0px;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -698,7 +703,7 @@ a {
   }
 
   footer {
-    margin-top: 40px;
+    margin-top: 0px;
   }
 }
 
@@ -706,9 +711,6 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  overflow-x: hidden;
-}
 
 .dark-mode .footer {
   background: #1a1a2e;
@@ -820,4 +822,18 @@ body.dark-mode .footer {
 
 .dark-mode .skill-card p {
   color: #ddd;
+}
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 5px 0;
+  }
+
 }

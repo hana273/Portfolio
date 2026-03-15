@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><title>Praktikum Minggu 3 - Layout</title>
+    <title>Praktikum Minggu 3 - Layout</title>
   <link rel="stylesheet" href="style.css">
 
 </head>
-<body>
     <body>
 
   <!-- ── NAVBAR ─────────────────────── -->
   <nav class="navbar">
     <div class="navbar__logo">
       <span class="logo-icon">&#9670;</span>
-      <span class="logo-text">HanaDev</span>
+      <span class="logo-text">HanaDev</span> <br> 
+<button id="dark-toggle" class="dark-btn">🌙 Dark Mode</button>
     </div>
 
     <ul class="navbar__links">
@@ -28,7 +29,6 @@
       <a href="#" class="btn-primary">Hire Me</a>
     </div>
   </nav>
-
 </body>
 <!-- ── HERO SECTION ────────────────── -->
   <section class="hero" id="home">
@@ -51,7 +51,8 @@
        </div>
   </section>
 
-  
+
+
 <!-- ── ABOUT SECTION ──────────────── -->
   <section class="about" id="about">
     <div class="container">
@@ -85,7 +86,11 @@
   <!-- ── PORTFOLIO SECTION ──────────────── -->
   <section class="portfolio" id="portfolio">
     <div class="container">
+
       <h2 class="section-title">My Portfolio</h2>
+      <p class="portfolio-desc">
+        Beberapa project yang sudah saya kerjakan
+      </p>
 
       <div class="skills__grid">
 
@@ -108,7 +113,6 @@
           <p>Binary tree project yang dibuat menggunakan python dengan konsep pegunungan</p>
         </div>
 
-      </div>
     </div>
   </section>  
 
@@ -122,6 +126,17 @@
       
       <div class="contact-container">
 
+        <div class="form-section">
+  <div class="form-container">
+    <input type="text" id="input-nama" placeholder="Nama lengkap" />
+    <input type="email" id="input-email" placeholder="Alamat email" />
+    <textarea id="input-pesan" placeholder="Pesan kamu..." rows="4"></textarea>
+    <button id="btn-kirim">Kirim Pesan</button>
+    <div id="form-feedback" class="feedback hidden"></div>
+  </div>
+</div>
+
+        
         <div class="email">
           <p>✉️ Email: </p>
           <p>hanasiahaan27@gmail.com</p>
@@ -134,7 +149,6 @@
       </div>
       </div>
   </section>  
-
 
       <!-- ── FOOTER ──────────────────────── -->
   <footer class="footer">
@@ -152,7 +166,9 @@
       </div>
     </div>
   </footer>
+  
 
+<script src="script.js"></script>
 
 </body>
 </html>

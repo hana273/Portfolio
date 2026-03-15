@@ -92,6 +92,17 @@ a {
 .btn-primary:hover {
   background-color: #4d041c;
 }
+
+.dark-mode .navbar {
+  background: #1a1a2e;
+}
+
+.dark-btn {
+  padding: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
 /* ── HERO ───────────────────────────────────── */
 .hero {
   min-height: calc(100vh - 64px); /* full tinggi layar dikurangi navbar */
@@ -180,6 +191,10 @@ a {
   padding: 0 32px;
 }
 
+.dark-mode .hero {
+  background: #1a1a2e;
+}
+
 /* ── About ───────────────────────────────────── */
 .about {
   min-height: calc(100vh - 64px); /* full tinggi layar dikurangi navbar */
@@ -254,6 +269,10 @@ a {
 
 .about p {
   text-align: justify;
+}
+
+.dark-mode .about {
+  background: #1a1a2e;
 }
 
 /* ── SKILLS SECTION ─────────────────────────── */
@@ -359,10 +378,12 @@ a {
   color: #f7c7da;
 }
 
-.portfolio__desc {
+.portfolio-desc {
   color: #f7c7da;
   font-size: 1.1rem;
-  margin-bottom: 36px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .portfolio__actions {
@@ -389,6 +410,10 @@ a {
 
 #portfolio {
   margin-bottom: 0px;
+}
+
+.dark-mode .portfolio {
+  background: #1a1a2e;
 }
 
 /* ── CONTAINER (utility class) ──────────────── */
@@ -446,8 +471,6 @@ a {
   align-items: center;
   justify-content: center;
   padding: 20px 32px;
-  margin-bottom: 0;
-  padding-bottom: 20px;
 }
 
 .contact__content {
@@ -561,6 +584,11 @@ a {
 
 }
 
+.dark-mode .contact {
+  background: #1a1a2e;
+}
+
+
 /* ════════════════════════════════════════════
    RESPONSIVE DESIGN — Mobile First Override
    Breakpoints: 768px (tablet), 1024px (desktop)
@@ -627,7 +655,6 @@ a {
   color: #f8eef1;
   text-align: center;
   width:100%;
-  margin-top: 0;
 }
 
 .footer__inner {
@@ -670,6 +697,127 @@ a {
     text-align: center;
   }
 
+  footer {
+    margin-top: 40px;
+  }
+}
+
 body {
   overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.dark-mode .footer {
+  background: #1a1a2e;
+}
+
+/* Tombol dark mode */
+.dark-btn {
+  padding: 8px 16px;
+  border: 2px solid #333;
+  border-radius: 20px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* Gaya saat dark mode aktif — diapply ke <body> */
+.dark-mode {
+  background-color: #1a1a2e !important;
+  color: #e0e0e0 !important;
+}
+
+.dark-mode .dark-btn {
+  border-color: #e0e0e0;
+  color: #e0e0e0;
+}
+
+/* Transisi halus untuk semua elemen saat mode berubah */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode a {
+  background: #1a1a2e;
+}
+
+.sosial a {
+  color: #0c0d0e;
+  border: 2px solid #131314;
+  border-radius: 30px;
+}
+
+body.dark-mode .sosial a {
+  color: #f7fcf7;
+  border: 2px solid #2a023a;
+}
+
+.form-section { padding: 60px 20px; max-width: 500px; margin: 0 auto; }
+.form-container { display: flex; flex-direction: column; gap: 12px; }
+.form-container input,
+.form-container textarea {
+  padding: 12px 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+}
+.form-container input:focus,
+.form-container textarea:focus {
+  outline: none;
+  border-color: #2E74B5;
+}
+#btn-kirim {
+  padding: 14px;
+  background: #4b18e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#btn-kirim:hover { background: #4b18e2; }
+.feedback { padding: 12px 16px; border-radius: 8px; font-size: 14px; }
+.feedback.error { background: #FEE2E2; color: #DC2626; border: 1px solid #FECACA; }
+.feedback.success { background: #DCFCE7; color: #16A34A; border: 1px solid #BBF7D0; }
+.hidden { display: none; }
+
+body.dark-mode .email p {
+  color: white !important;
+}
+
+body.dark-mode .portfolio-desc {
+  color: white;
+}
+
+body.dark-mode .navbar {
+  background-color: #141421;
+}
+
+body.dark-mode .footer {
+  background-color: #141421;
+  border-top: 1px solid #0c0d0e;
+}
+
+body.dark-mode .navbar a,
+body.dark-mode .footer {
+  color: white;
+}
+
+.dark-mode .skill-card {
+  background: #141421;
+  color: #f5f5f5;
+}
+
+.dark-mode .skill-card h3 {
+  color: #f5f5f5;
+}
+
+.dark-mode .skill-card p {
+  color: #ddd;
 }

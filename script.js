@@ -20,6 +20,40 @@ darkToggleBtn.addEventListener('click', function() {
   }
 });
 
+
+// ==============================
+// FITUR 2: COUNTER
+// ==============================
+
+let count = 0;
+const angkaDisplay = document.querySelector('#angka-counter');
+const pesanDisplay = document.querySelector('#counter-pesan');
+const btnTambah = document.querySelector('#btn-tambah');
+const btnKurang = document.querySelector('#btn-kurang');
+
+function updatePesan(n) {
+  if (n === 0) pesanDisplay.textContent = 'Yuk mulai minum air!';
+  else if (n < 4) pesanDisplay.textContent = 'Kurang minum nih...';
+  else if (n < 8) pesanDisplay.textContent = 'Lumayan, terus tambah! 💧';
+  else pesanDisplay.textContent = 'Keren! Sudah cukup minum air hari ini! 🎉';
+}
+
+btnTambah.addEventListener('click', function() {
+  count++;
+  angkaDisplay.textContent = count;
+  updatePesan(count);
+});
+
+btnKurang.addEventListener('click', function() {
+  if (count > 0) {
+    count--;
+    angkaDisplay.textContent = count;
+    updatePesan(count);
+  }
+});
+
+
+
 // ==============================
 // FITUR 3: VALIDASI FORM
 // ==============================

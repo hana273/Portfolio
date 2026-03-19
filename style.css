@@ -758,6 +758,44 @@ body.dark-mode .sosial a {
   border: 2px solid #2a023a;
 }
 
+
+.counter-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #be1c52;
+}
+
+.counter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin: 24px 0;
+}
+
+#angka-counter {
+  font-size: 72px;
+  font-weight: bold;
+  color: #2E74B5;
+  min-width: 100px;
+}
+
+.counter-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 2px solid #2E74B5;
+  background: white;
+  font-size: 28px;
+  cursor: pointer;
+  color: #2E74B5;
+}
+
+.counter-btn:hover {
+  background: #2E74B5;
+  color: white;
+}
+
 .form-section { padding: 60px 20px; max-width: 500px; margin: 0 auto; }
 .form-container { display: flex; flex-direction: column; gap: 12px; }
 .form-container input,
@@ -823,6 +861,12 @@ body.dark-mode .footer {
 .dark-mode .skill-card p {
   color: #ddd;
 }
+
+body.dark-mode .counter-section {
+  background-color: #1a1a2e;
+}
+
+
 
 @media (max-width: 768px) {
 
